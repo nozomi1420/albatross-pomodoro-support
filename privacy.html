@@ -138,7 +138,7 @@
       <p>集中や休憩が終わったことを、アプリを閉じていてもお知らせするために、iPhone の中で作る通知（ローカル通知）を使います。通知の許可は任意で、iPhone の「設定」からいつでも変更できます。通知のために当開発者のサーバーと通信することはありません（プッシュ通知は使いません）。ロック画面・ダイナミックアイランドの残り時間の表示（ライブアクティビティ）も、iPhone の中だけで更新します。</p>
 
       <h2>6. 広告（Google AdMob）とトラッキングの許可</h2>
-      <p>本アプリは、Google LLC が提供する広告配信サービス <strong>Google AdMob</strong> と、同意の管理の仕組み（User Messaging Platform）を使っています。これらの SDK は、広告の配信・広告の効果の測定・分析、Google の SDK が申告している「開発者の広告・マーケティング」（当開発者が自社の広告やマーケティングのメールを出すことはありません）、アプリの機能（同意の管理など）のために、次の情報を収集し、Google（と、Google の広告のパートナー）に送信します（各 SDK が Apple に申告している内容に基づきます）。</p>
+      <p>本アプリは、Google LLC が提供する広告配信サービス <strong>Google AdMob</strong> と、同意の管理の仕組み（User Messaging Platform）を使っています。これらの SDK は、広告の配信・広告の効果の測定・分析、Google の SDK が申告している「開発者の広告・マーケティング」（当開発者が自社の広告やマーケティングのメールを出すことはありません）、アプリの機能（同意の管理など）のために、次の情報を収集し、Google LLC とその関係会社（と、Google の広告のパートナー）に送信します（各 SDK が Apple に申告している内容に基づきます）。</p>
       <ul>
         <li>おおよその位置情報（IP アドレスなどから推定されるもの。GPS による正確な位置情報は使いません）</li>
         <li>端末の識別子（トラッキングを許可した場合の広告識別子（IDFA）など）</li>
@@ -165,6 +165,14 @@
         <li><strong>広告の表示回数の設定の読み込み:</strong> アプリを更新せずに広告の表示回数を調整するため、1日に1回、本サポートサイト（GitHub Pages）に置いた設定ファイルを読み込みます。この通信でユーザーの情報や記録は送りません。通信の性質上、IP アドレスなどは GitHub のサーバーに届きます（<a href="https://docs.github.com/ja/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub のプライバシーに関する声明</a>）。</li>
         <li>環境音はアプリの中に入っている音源を再生します。音源のために通信はしません。</li>
       </ul>
+      <h3>Plus の購入</h3>
+      <p>Plus のお支払いは Apple が処理します。当開発者が、お名前やお支払いの情報を受け取ることはありません。購入の状態は、本アプリが Apple の仕組み（StoreKit）を使って端末の中で確かめます。Plus をお使いの間は、広告を表示しません。</p>
+      <h3>外部送信の一覧（電気通信事業法に基づくお知らせ）</h3>
+      <p>本アプリが、端末から当開発者以外に送る情報は次のとおりです。</p>
+      <ul>
+        <li><strong>送信先: Google LLC とその関係会社</strong>（Google AdMob、User Messaging Platform）<br>送る情報: IP アドレス（ここから推定されるおおよその位置）、端末・OS・通信に関する情報、端末の識別子（トラッキングを許可した場合の広告識別子（IDFA）など）、広告の表示・タップ、クラッシュ・パフォーマンスの情報<br>Google の利用目的: 広告の配信、広告の効果の測定・分析、同意の管理など（<a href="https://business.safety.google/intl/ja/tba-jp/" target="_blank" rel="noopener">Google の説明: 電気通信事業法の外部送信規律への対応について</a>）<br>当開発者の利用目的: 広告を表示して、本アプリを無料で提供するため</li>
+        <li><strong>送信先: GitHub, Inc.</strong>（GitHub Pages）<br>送る情報: IP アドレス、端末・OS の種類など、通信に通常含まれる情報（記録やユーザーの情報は送りません）<br>GitHub の利用目的: 設定ファイルの配信（<a href="https://docs.github.com/ja/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub のプライバシーに関する声明</a>）<br>当開発者の利用目的: 広告の表示回数の設定を読み込むため</li>
+      </ul>
 
       <h2>8. 使う許可の一覧</h2>
       <ul>
@@ -180,15 +188,32 @@
 
       <h2>10. データの削除</h2>
       <p>3章・4章の情報は、本アプリを削除すると、iPhone と Apple Watch から削除されます（iPhone のアプリを削除すると、Apple Watch のアプリも削除されます）。iPhone 本体のバックアップに含まれた分は、バックアップを削除するまで残ります。当開発者はこれらの情報を持っていないため、当開発者の側で削除するデータはありません。</p>
-      <p>お問い合わせでいただいたメールアドレスと内容は、返信のためだけに使い、第三者には渡しません。対応が終わってから1年以内に削除します。それより前に削除を希望される場合は、12章の連絡先までお知らせください。</p>
+      <p>お問い合わせでいただいたメールアドレスと内容は、返信と、本アプリの改善（個人を特定しない形で）のためだけに使い、第三者には渡しません。対応が終わってから1年以内に削除します。それより前に削除を希望される場合は、12章の連絡先までお知らせください。</p>
       <p>広告の仕組みが収集した情報は、Google が Google のプライバシーポリシーに従って保存・削除します（<a href="https://policies.google.com/technologies/retention" target="_blank" rel="noopener">Google によるデータの保持</a>）。本アプリを削除すれば、以後の収集は止まります。トラッキングの許可は6章の方法で、法令で同意が必要な地域の同意は本アプリの「プライバシーの設定」から、いつでも取り消せます。</p>
 
       <h2>11. プライバシーポリシーの変更</h2>
       <p>本アプリの機能の追加や法令の変更に合わせて、本ポリシーを更新することがあります。変更した場合は、本ページで公開し、最終更新日を改めます。</p>
 
       <h2>12. お問い合わせ</h2>
-      <p>本ポリシーに関するご質問や、お問い合わせのメールの削除のご希望は、以下までお知らせください（いただいた情報の扱いは10章のとおりです）。</p>
+      <p>本ポリシーに関するご質問、個人情報の開示などのご請求（13章）、苦情は、以下までお知らせください（いただいた情報の扱いは10章・13章のとおりです）。</p>
       <p><strong>メールアドレス:</strong> nozomi14200908@gmail.com</p>
+      <h2>13. 個人情報保護法に基づく公表事項</h2>
+      <p>当開発者が保有する個人情報は、お問い合わせのメール（メールアドレス、お名前、内容）だけです。これについて、個人情報の保護に関する法律に基づき、次のとおりお知らせします。</p>
+      <ol>
+        <li><strong>事業者:</strong> アルバトロス（個人事業主）。代表者の氏名と住所は、ご請求があれば遅滞なくお知らせします。</li>
+        <li><strong>利用目的:</strong> お問い合わせへの返信と、本アプリの改善（個人を特定しない形で）のため（10章）。</li>
+        <li><strong>開示などのご請求:</strong> ご本人から、利用目的の通知、開示（第三者提供の記録の開示を含みます）、訂正・追加・削除、利用の停止・消去、第三者への提供の停止のご請求があった場合は、法律に従って対応します。ご請求の内容を書いて、お問い合わせのときと同じメールアドレスから、12章のメールアドレスにお送りください。ご本人の確認は、そのメールアドレスからのご連絡であることで行い、必要な場合は追加で確認をお願いすることがあります。手数料はいただきません。回答はメールでお送りします。</li>
+        <li><strong>安全管理のために講じた措置:</strong>
+          <ul>
+            <li>基本方針: 法令とガイドラインを守り、お問い合わせと苦情の窓口を12章に置いています。</li>
+            <li>取り扱う者: 当開発者（代表者）1人だけが取り扱います。</li>
+            <li>技術面: メールのアカウントを2段階認証で保護し、取り扱う機器には画面ロックを設定し、OS を最新に保っています。</li>
+            <li>保存期間: 対応が終わってから1年以内に削除します（10章）。</li>
+            <li>外国での取り扱い: お問い合わせのメールは、Google LLC（米国）の Gmail で受信・保存しています。Google はデータを複数の国のデータセンターに分けて保存しているため、保存先のサーバの国を特定できません（<a href="https://www.google.com/about/datacenters/locations/" target="_blank" rel="noopener">Google のデータセンターの所在地</a>）。米国の個人情報の保護に関する制度は、個人情報保護委員会の「<a href="https://www.ppc.go.jp/personalinfo/legal/kaiseihogohou/" target="_blank" rel="noopener">外国における個人情報の保護に関する制度等の調査</a>」で確認したうえで、上記の措置を講じています。</li>
+          </ul>
+        </li>
+        <li><strong>苦情の申出先:</strong> 12章のメールアドレス。</li>
+      </ol>
 
       <div class="lang-section" id="english" lang="en">
         <h2>Privacy Policy (English)</h2>
@@ -235,7 +260,7 @@
         <p>The App uses local notifications, created on your iPhone, to tell you when a focus or break ends even if the App is closed. Notifications are optional and can be changed in Settings at any time. The App does not use push notifications and does not contact our servers for them. The countdown on the Lock Screen and Dynamic Island (Live Activity) is also updated on the device.</p>
 
         <h2>6. Ads (Google AdMob) and tracking permission</h2>
-        <p>The App uses <strong>Google AdMob</strong>, an ad service provided by Google LLC, and Google's User Messaging Platform for consent. According to the privacy information these SDKs declare to Apple, they collect the following data and send it to Google (and Google's advertising partners) for ad delivery, ad measurement, analytics, "developer's advertising or marketing" as declared by Google's SDK (we do not run our own ads or send marketing messages), and app functionality (such as managing consent):</p>
+        <p>The App uses <strong>Google AdMob</strong>, an ad service provided by Google LLC, and Google's User Messaging Platform for consent. According to the privacy information these SDKs declare to Apple, they collect the following data and send it to Google LLC and its affiliates (and Google's advertising partners) for ad delivery, ad measurement, analytics, "developer's advertising or marketing" as declared by Google's SDK (we do not run our own ads or send marketing messages), and app functionality (such as managing consent):</p>
         <ul>
           <li>Coarse location (estimated from your IP address, etc.; precise GPS location is not used)</li>
           <li>Device identifiers (such as the advertising identifier (IDFA), if you allow tracking)</li>
@@ -262,6 +287,14 @@
           <li><strong>Ad frequency settings:</strong> To adjust how often ads are shown without an app update, the App downloads a small settings file from this support site (GitHub Pages) once a day. No personal information or records are sent. As with any web request, your IP address and similar data reach GitHub's servers (<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub General Privacy Statement</a>).</li>
           <li>Ambient sounds are bundled in the App; no network access is used for them.</li>
         </ul>
+        <h3>Plus purchases</h3>
+        <p>Payments for Plus are processed by Apple. We never receive your name or payment information. The App checks your purchase status on your device using Apple's StoreKit framework. While you use Plus, no ads are shown.</p>
+        <h3>External transmissions (notice under Japan's Telecommunications Business Act)</h3>
+        <p>The App sends the following information from your device to parties other than us.</p>
+        <ul>
+          <li><strong>Recipient: Google LLC and its affiliates</strong> (Google AdMob, User Messaging Platform)<br>Information: IP address (and approximate location estimated from it), device, OS and network information, device identifiers (such as the IDFA, if you allow tracking), ad views and taps, crash and performance data<br>Google's purposes: Ad delivery, ad measurement and analytics, consent management, etc. (<a href="https://business.safety.google/intl/ja/tba-jp/" target="_blank" rel="noopener">Google's explanation</a>)<br>Our purpose: To show ads so that the App can be offered free of charge</li>
+          <li><strong>Recipient: GitHub, Inc.</strong> (GitHub Pages)<br>Information: IP address, device and OS type, and other information normally included in a web request (no records or personal information are sent)<br>GitHub's purpose: Delivering the settings file (<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub General Privacy Statement</a>)<br>Our purpose: To load the ad frequency settings</li>
+        </ul>
 
         <h2>8. Permissions</h2>
         <ul>
@@ -277,15 +310,32 @@
 
         <h2>10. Deleting your data</h2>
         <p>The data in Sections 3 and 4 is deleted from your iPhone and Apple Watch when you delete the App (deleting the iPhone app also deletes the Apple Watch app). Copies in an iPhone backup remain until you delete that backup. We do not hold this data, so there is nothing for us to delete on our side.</p>
-        <p>If you email us, we use your email address and message only to reply, do not share them with any third party, and delete them within one year after your inquiry is resolved. To have them deleted sooner, contact us (Section 12).</p>
+        <p>If you email us, we use your email address and message only to reply to you and, without identifying you, to improve the App, and do not share them with any third party, and delete them within one year after your inquiry is resolved. To have them deleted sooner, contact us (Section 12).</p>
         <p>Data collected by the ad SDK is retained and deleted by Google under Google's Privacy Policy (<a href="https://policies.google.com/technologies/retention?hl=en" target="_blank" rel="noopener">How Google retains data</a>). Deleting the App stops any further collection. You can withdraw tracking permission as described in Section 6, and, in regions where consent is required by law, withdraw consent from "Privacy Settings" in the App at any time.</p>
 
         <h2>11. Changes to this policy</h2>
         <p>We may update this policy when we add features or when laws change. Changes will be posted on this page with a new "Last updated" date.</p>
 
         <h2>12. Contact</h2>
-        <p>For questions about this policy, or to request deletion of your emails to us, please contact us at the address below (see Section 10 for how we handle them):</p>
+        <p>For questions about this policy, requests regarding your personal information (Section 13), or complaints, please contact us at the address below (see Sections 10 and 13 for how we handle them):</p>
         <p><strong>Email:</strong> nozomi14200908@gmail.com</p>
+        <h2>13. Disclosures under Japan's Act on the Protection of Personal Information</h2>
+        <p>The only personal information we hold is the email you send us (your email address, name and message). Under Japan's Act on the Protection of Personal Information, we disclose the following.</p>
+        <ol>
+          <li><strong>Business operator:</strong> Albatross (a sole proprietorship). We will provide the name and address of the owner without delay upon request.</li>
+          <li><strong>Purpose of use:</strong> To reply to your inquiry and, without identifying you, to improve the App (Section 10).</li>
+          <li><strong>Requests for disclosure, etc.:</strong> We will respond, as required by law, to your request to be notified of the purpose of use, or for disclosure (including records of provision to third parties), correction, addition or deletion, suspension of use or erasure, or suspension of provision to third parties. Please email the address in Section 12 from the same email address you used for your inquiry, describing your request. We verify your identity by the fact that the request comes from that address, and may ask for additional confirmation if needed. There is no fee. We will reply by email.</li>
+          <li><strong>Security measures:</strong>
+            <ul>
+              <li>Basic policy: We comply with applicable laws and guidelines, and provide a contact point for inquiries and complaints (Section 12).</li>
+              <li>Who handles the data: Only the owner of Albatross handles it.</li>
+              <li>Technical measures: The email account is protected with two-step verification; devices used are protected with a screen lock and kept up to date.</li>
+              <li>Retention: Deleted within one year after the inquiry is resolved (Section 10).</li>
+              <li>Handling outside Japan: Emails are received and stored in Gmail, provided by Google LLC (United States). Because Google stores data across data centers in multiple countries, we cannot identify the country where the server is located (<a href="https://www.google.com/about/datacenters/locations/" target="_blank" rel="noopener">Google data center locations</a>). We take the measures above after reviewing the U.S. personal information protection system using the survey published by Japan's Personal Information Protection Commission.</li>
+            </ul>
+          </li>
+          <li><strong>Complaints:</strong> Please contact the email address in Section 12.</li>
+        </ol>
       </div>
     </article>
   </main>

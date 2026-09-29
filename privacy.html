@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>プライバシーポリシー — 集中タイマー：ポモドーロ＆アプリロック | アルバトロス</title>
-  <meta name="description" content="集中タイマー：ポモドーロ＆アプリロック（iPhone 専用）のプライバシーポリシー。収集データ・第三者広告（AdMob）・集中ロック（スクリーンタイム）・アプリ内課金・お問い合わせ。">
+  <meta name="description" content="集中タイマー：ポモドーロ＆アプリロック（iPhone 専用）のプライバシーポリシー。広告なし・計測なし。収集データ・集中ロック（スクリーンタイム）・アプリ内課金・お問い合わせ。">
   <style>
     :root {
       --primary: #E85D5D;
@@ -121,7 +121,7 @@
         <li>ヘルスケアデータ</li>
         <li>当開発者独自のクラッシュレポート</li>
       </ul>
-      <p>ただし、本アプリは収益化のためGoogle AdMob 広告SDKを組み込んでおり、広告SDKが広告ID等を収集・送信します。詳細は「6. 第三者への情報提供」を参照してください。</p>
+      <p>本アプリには広告や使われ方の計測（アナリティクス）の仕組みは組み込んでおらず、当開発者が本アプリを通じてこれらの情報を収集することもありません。</p>
 
       <h2>3. 端末内のデータ保存について</h2>
       <p>本アプリはユーザーが設定・記録した以下の情報を <strong>端末内（および、ペアリングした Apple Watch）のみ</strong> に保存します（当開発者のサーバーはなく、外部サーバーへの送信は行いません）：</p>
@@ -141,47 +141,27 @@
       <p>本アプリが使用する権限は以下のとおりです（GPSによる位置情報・カメラ・マイク・連絡先・写真ライブラリなどのセンシティブな権限は使用しません）：</p>
       <ul>
         <li><strong>通知の表示</strong>：タイマー終了時にバックグラウンドでも通知を表示するため。許可は任意で、いつでも端末の設定から変更できます。</li>
-        <li><strong>トラッキングの許可（App Tracking Transparency）</strong>：あなたに合った広告を表示するため。許可は任意で、いつでも端末の設定から変更できます（「6. 第三者への情報提供」を参照）。</li>
         <li><strong>スクリーンタイム（集中ロック）</strong>：集中中に、ユーザーが選んだアプリ・サイトを一時的に制限するため。Apple のスクリーンタイム（Family Controls）の仕組みを使います。許可は任意です（「5. 集中ロック（スクリーンタイム連携）について」を参照）。</li>
       </ul>
-      <p>本アプリは以下の権限を <strong>一切使用しません</strong>：位置情報、カメラ、マイク、連絡先、写真ライブラリ、その他のセンシティブな権限。</p>
-      <p>また、広告の配信のため、インターネットに接続します（「6. 第三者への情報提供」を参照）。</p>
+      <p>本アプリは以下の権限を <strong>一切使用しません</strong>：位置情報、カメラ、マイク、連絡先、写真ライブラリ、その他のセンシティブな権限。トラッキングの許可（App Tracking Transparency）も求めません。</p>
+      <p>本アプリは、設定ファイルの読み込みのためだけにインターネットに接続します（「7. 設定ファイルの読み込み（GitHub Pages）について」を参照）。</p>
 
       <h2>5. 集中ロック（スクリーンタイム連携）について</h2>
       <p>本アプリの「集中ロック」は、集中している間、ユーザーが選んだアプリやウェブサイトを一時的に開けないようにする機能です。この機能は、Apple が提供するスクリーンタイム（Family Controls / Screen Time API）の仕組みを使って動きます。</p>
-      <p>ユーザーが集中ロックの対象として選んだアプリやウェブサイトの情報を、<strong>本アプリが当開発者や第三者に送ることはありません</strong>。広告の仕組み（Google の SDK）にも渡さず、広告・広告の効果の測定・分析・利用者の分析（プロファイリング）には使いません。集中ロックの設定は、この iPhone の中だけに保存されます（Apple Watch には送りません）。iPhone 本体のバックアップをお使いの場合は、ほかのアプリのデータと同じく、Apple の仕組みでバックアップに含まれることがあります。</p>
+      <p>ユーザーが集中ロックの対象として選んだアプリやウェブサイトの情報を、<strong>本アプリが当開発者や第三者に送ることはありません</strong>。本アプリには広告や分析（アナリティクス）の仕組みが無く、利用者の分析（プロファイリング）にも使いません。集中ロックの設定は、この iPhone の中だけに保存されます（Apple Watch には送りません）。iPhone 本体のバックアップをお使いの場合は、ほかのアプリのデータと同じく、Apple の仕組みでバックアップに含まれることがあります。</p>
 
-      <h2>6. 第三者への情報提供（広告配信について）</h2>
-      <p>本アプリは収益化のため、Googleが提供する広告配信サービス <strong>Google AdMob</strong> を使用しています。AdMobを通じて以下の情報がGoogleおよび広告配信パートナーに送信される可能性があります：</p>
-      <ul>
-        <li>広告識別子（iOSのIDFA。トラッキングを許可した場合）</li>
-        <li>おおよその位置情報（IPアドレスから推定される市区町村レベル）</li>
-        <li>端末・OSに関する情報（端末モデル、OSバージョン、言語設定・国設定など）</li>
-        <li>広告のインプレッション・クリック等のイベント情報（広告データ）</li>
-        <li>クラッシュ・パフォーマンス等の診断データ</li>
-      </ul>
-      <p><strong>送信先:</strong> Google LLC（米国）とその関係会社・広告配信パートナー</p>
-      <p><strong>送る情報:</strong> 上記のとおり（広告識別子、おおよその位置情報、端末・OSに関する情報、広告のイベント情報、診断データ）</p>
-      <p><strong>Google の利用目的:</strong> 広告の配信、広告の効果の測定・分析、Google の SDK が申告している「開発者の広告・マーケティング」（当開発者が自社の広告やマーケティングのメールを出すことはありません）、および同意の管理などのアプリの機能（<a href="https://business.safety.google/intl/ja/tba-jp/" target="_blank" rel="noopener">Google による電気通信事業法の外部送信規律への対応についての説明</a>）</p>
-      <p><strong>当開発者の利用目的:</strong> 広告を表示して、本アプリを無料で提供するため</p>
-      <p><strong>トラッキングの選択（ATTダイアログ）:</strong> 本アプリでは、AppleのApp Tracking Transparency（ATT）に基づき「トラッキングを許可しますか？」のダイアログを表示します。「許可しない」を選択すると、IDFAは送信されず、広告のパーソナライズは行われません（広告自体は表示されます）。この選択は、いつでも端末の「設定」から変更できます。</p>
-      <p>当開発者は、本アプリでユーザーのデータを扱う第三者（Google）が、Google のプライバシーポリシーと広告の規約に基づき、本ポリシーと App Store の審査ガイドラインが求めるのと同じか同等の保護をユーザーのデータに与えることを確認したうえで、その仕組みを使っています。</p>
-      <p>広告の仕組みが収集した情報は、Google が Google のプライバシーポリシーに従って保存・削除します（<a href="https://policies.google.com/technologies/retention" target="_blank" rel="noopener">Google によるデータの保持</a>）。本アプリを削除すれば、以後の収集は止まります。トラッキングの許可は上記の方法で、法令で同意が必要な地域の同意は本アプリの設定画面の「プライバシーの設定」から、いつでも取り消せます。</p>
-      <p>上記の広告の仕組み、7章の設定ファイルの読み込み（GitHub）、および13章のお問い合わせのメールの受信・保管に使う Gmail（Google LLC）を除き、当開発者がユーザーの情報を第三者に提供・販売・共有することはありません。</p>
-      <p>
-        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google プライバシーポリシー</a><br>
-        <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google 広告に使われる情報</a>
-      </p>
+      <h2>6. 第三者への情報提供</h2>
+      <p>本アプリには広告の仕組みや使われ方の計測（アナリティクス）の SDK は組み込んでいません。本アプリを通じて収集する情報は無いため、当開発者が第三者にユーザーの情報を提供・販売・共有することもありません（7章の設定ファイルの読み込み（GitHub）、および13章のお問い合わせのメールの受信・保管に使う Gmail（Google LLC）を除きます）。</p>
 
       <h2>7. 設定ファイルの読み込み（GitHub Pages）について</h2>
-      <p>本アプリは、広告の表示回数の設定を読み込むため、当開発者のサポートサイト（GitHub, Inc. の GitHub Pages 上）に置いた設定ファイルを1日1回読み込みます。この設定ファイルには広告やセールの表示に関する設定値のみが含まれ、ユーザーの個人情報や記録は送信しません。</p>
-      <p>この通信の際、GitHub のサーバーには IP アドレスなど、通信に通常含まれる情報が届きますが、当開発者や広告配信パートナーがそれを読める形で受け取ることはありません。</p>
+      <p>本アプリは、期間限定のセール（値引き）などの表示設定を読み込むため、当開発者のサポートサイト（GitHub, Inc. の GitHub Pages 上）に置いた設定ファイルを1日1回読み込みます。この設定ファイルにはセールなどの表示に関する設定値のみが含まれ、ユーザーの個人情報や記録は送信しません。</p>
+      <p>この通信の際、GitHub のサーバーには IP アドレスなど、通信に通常含まれる情報が届きますが、当開発者がそれを読める形で受け取ることはありません。</p>
 
       <h2>8. Plus（アプリ内課金）について</h2>
-      <p>本アプリには、有料の「Plus」があります。Plus のお支払いは Apple が処理します。当開発者が、お名前やお支払いの情報を受け取ることはありません。購入の状態は、本アプリが Apple の仕組み（StoreKit）を使って端末の中で確かめます。Plus をお使いの間は、広告を表示しません。</p>
+      <p>本アプリには、有料の「Plus」があります。Plus のお支払いは Apple が処理します。当開発者が、お名前やお支払いの情報を受け取ることはありません。購入の状態は、本アプリが Apple の仕組み（StoreKit）を使って端末の中で確かめます。</p>
 
       <h2>9. お子さまのプライバシー</h2>
-      <p>本アプリは13歳未満の子どもから意図的に個人情報を収集することはありません。当開発者は、本アプリを通じて個人を特定できる情報を収集しません。広告の仕組みが送る情報については「6. 第三者への情報提供」をご覧ください。</p>
+      <p>本アプリは13歳未満の子どもから意図的に個人情報を収集することはありません。当開発者は、本アプリを通じて個人を特定できる情報を収集しません。</p>
 
       <h2>10. お問い合わせのメールの扱い</h2>
       <p>お問い合わせでいただいたメールアドレス、お名前、内容は、返信のためだけに使い、第三者には渡しません（受信・保管に使う Gmail（Google LLC）を除きます。13章）。対応が終わってから1年以内に削除します。それより前に削除を希望される場合は、12章の連絡先までお知らせください。</p>
@@ -230,7 +210,7 @@
           <li>Health data</li>
           <li>Our own crash reports</li>
         </ul>
-        <p>However, the App includes the Google AdMob advertising SDK for monetization, and this SDK collects and transmits information such as an advertising identifier. See "6. Provision of Information to Third Parties" for details.</p>
+        <p>The App does not include any advertising or analytics SDK, and we do not collect this information through the App either.</p>
 
         <h3>3. Data Stored on Your Device</h3>
         <p>The App stores the following information that you set or record <strong>only on your device (and on a paired Apple Watch)</strong>. We have no server of our own, and this information is not sent to any external server:</p>
@@ -250,47 +230,27 @@
         <p>The App uses the following permissions (it does not use sensitive permissions such as GPS location, camera, microphone, contacts or photo library):</p>
         <ul>
           <li><strong>Notifications</strong>: To show a notification when the timer ends, even in the background. This is optional and can be changed at any time in your device settings.</li>
-          <li><strong>Tracking (App Tracking Transparency)</strong>: To show ads tailored to you. This is optional and can be changed at any time in your device settings (see "6. Provision of Information to Third Parties").</li>
           <li><strong>Screen Time (Focus Lock)</strong>: To temporarily restrict apps and sites you choose during focus sessions, using Apple's Screen Time (Family Controls) framework. This is optional (see "5. About Focus Lock (Screen Time Integration)").</li>
         </ul>
-        <p>The App does <strong>not</strong> use any of the following: location, camera, microphone, contacts, photo library, or other sensitive permissions.</p>
-        <p>The App also connects to the internet for ad delivery (see "6. Provision of Information to Third Parties").</p>
+        <p>The App does <strong>not</strong> use any of the following: location, camera, microphone, contacts, photo library, or other sensitive permissions. It also does not request App Tracking Transparency permission.</p>
+        <p>The App connects to the internet only to load a configuration file (see "7. Loading a Configuration File (GitHub Pages)").</p>
 
         <h3>5. About Focus Lock (Screen Time Integration)</h3>
         <p>The App's "Focus Lock" temporarily prevents you from opening apps or websites you have selected while you are focusing. This feature works using Apple's Screen Time (Family Controls / Screen Time API).</p>
-        <p><strong>The App never sends information about the apps and websites you select for Focus Lock to us or to any third party.</strong> It is never passed to the ad SDK (Google), and is not used for advertising, ad measurement, analytics or profiling. Focus Lock settings are stored only on your iPhone (they are not sent to Apple Watch). If you back up your iPhone, Apple may include them in the backup like other app data.</p>
+        <p><strong>The App never sends information about the apps and websites you select for Focus Lock to us or to any third party.</strong> The App has no advertising or analytics SDK, and this information is never used for profiling. Focus Lock settings are stored only on your iPhone (they are not sent to Apple Watch). If you back up your iPhone, Apple may include them in the backup like other app data.</p>
 
-        <h3>6. Provision of Information to Third Parties (Advertising)</h3>
-        <p>For monetization, the App uses <strong>Google AdMob</strong>, an advertising service provided by Google. Through AdMob, the following information may be sent to Google and its advertising partners:</p>
-        <ul>
-          <li>Advertising identifier (the IDFA on iOS, if you allow tracking)</li>
-          <li>Approximate location (city level, estimated from your IP address)</li>
-          <li>Device and OS information (device model, OS version, language and country settings, etc.)</li>
-          <li>Ad impression and click event information (advertising data)</li>
-          <li>Crash, performance and other diagnostic data</li>
-        </ul>
-        <p><strong>Recipient:</strong> Google LLC (United States), its affiliates, and advertising partners</p>
-        <p><strong>Information sent:</strong> As listed above (advertising identifier, approximate location, device and OS information, ad event information, diagnostic data)</p>
-        <p><strong>Google's purposes:</strong> Ad delivery, ad measurement and analytics, the "developer's advertising or marketing" declared by Google's SDK (we do not run our own ads or send marketing messages), and app functionality such as consent management (<a href="https://business.safety.google/intl/ja/tba-jp/" target="_blank" rel="noopener">Google's explanation regarding Japan's external transmission rules</a>)</p>
-        <p><strong>Our purpose:</strong> To show ads so that the App can be offered free of charge</p>
-        <p><strong>Tracking choice (ATT dialog):</strong> Based on Apple's App Tracking Transparency (ATT), the App shows an "Allow tracking?" dialog. If you choose "Ask App Not to Track", the IDFA is not sent and ads are not personalized (ads are still shown). You can change this choice at any time in your device Settings.</p>
-        <p>We use third-party SDKs (Google) only after confirming that, under Google's Privacy Policy and advertising terms, they provide the same or equal protection of user data as stated in this policy and as required by the App Store Review Guidelines.</p>
-        <p>Data collected by the ad SDK is retained and deleted by Google under Google's Privacy Policy (<a href="https://policies.google.com/technologies/retention?hl=en" target="_blank" rel="noopener">How Google retains data</a>). Deleting the App stops any further collection. You can withdraw tracking permission as described above, and, in regions where consent is required by law, withdraw consent from "Privacy Settings" in the App at any time.</p>
-        <p>Apart from the ad SDK above, the settings download in Section 7 (GitHub), and Gmail (Google LLC), which we use to receive and store inquiry emails (Section 13), we do not provide, sell or share your information with any third party.</p>
-        <p>
-          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a><br>
-          <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from sites or apps that use its services</a>
-        </p>
+        <h3>6. Provision of Information to Third Parties</h3>
+        <p>The App does not include any advertising SDK or analytics (usage-measurement) SDK. Because the App does not collect information through these means, we do not provide, sell or share your information with any third party (except the configuration file download described in Section 7 (GitHub) and Gmail (Google LLC), which we use to receive and store inquiry emails, described in Section 13).</p>
 
         <h3>7. Loading a Configuration File (GitHub Pages)</h3>
-        <p>To load ad frequency settings, the App reads a configuration file placed on our support site (on GitHub Pages, provided by GitHub, Inc.) once a day. This configuration file contains only settings for displaying ads and sales; no personal information or records are sent.</p>
-        <p>During this communication, information normally included in a web request, such as your IP address, reaches GitHub's servers, but neither we nor our advertising partners receive it in a readable form.</p>
+        <p>To load settings such as limited-time sales, the App reads a configuration file placed on our support site (on GitHub Pages, provided by GitHub, Inc.) once a day. This configuration file contains only settings such as sale display; no personal information or records are sent.</p>
+        <p>During this communication, information normally included in a web request, such as your IP address, reaches GitHub's servers, but we do not receive it in a readable form.</p>
 
         <h3>8. Plus (In-App Purchase)</h3>
-        <p>The App offers a paid "Plus". Payments for Plus are processed by Apple. We never receive your name or payment information. The App checks your purchase status on your device using Apple's StoreKit framework. While you use Plus, no ads are shown.</p>
+        <p>The App offers a paid "Plus". Payments for Plus are processed by Apple. We never receive your name or payment information. The App checks your purchase status on your device using Apple's StoreKit framework.</p>
 
         <h3>9. Children's Privacy</h3>
-        <p>The App does not knowingly collect personal information from children under 13. We do not collect personally identifiable information through the App. For the information sent by the ad SDK, see "6. Provision of Information to Third Parties".</p>
+        <p>The App does not knowingly collect personal information from children under 13. We do not collect personally identifiable information through the App.</p>
 
         <h3>10. Handling of Your Inquiry Emails</h3>
         <p>We use the email address, name and content you provide in an inquiry only to reply to you, and we do not share them with any third party (except Gmail (Google LLC), which we use to receive and store them; see Section 13). We delete them within one year after the inquiry is resolved. To have them deleted sooner, please contact us (Section 12).</p>

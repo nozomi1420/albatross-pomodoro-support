@@ -34,7 +34,7 @@
       max-width: 720px;
       margin: 16px auto 0;
       padding: 0 20px;
-      font-size: 13px;
+      font-size: 14px;
       color: var(--text-muted);
     }
     .breadcrumb a { color: var(--text-muted); }
@@ -72,7 +72,7 @@
       border-radius: 8px;
       padding: 12px 16px;
       margin-bottom: 24px;
-      font-size: 13px;
+      font-size: 14px;
       color: var(--text-muted);
     }
     .meta strong { color: var(--text); }
@@ -83,7 +83,7 @@
       text-align: center;
       padding: 24px;
       color: var(--text-muted);
-      font-size: 13px;
+      font-size: 14px;
       border-top: 1px solid var(--border);
     }
     footer a { color: var(--text-muted); margin: 0 8px; }
@@ -103,8 +103,7 @@
       <div class="meta">
         <p><strong>アプリ名:</strong> 集中タイマー：ポモドーロ勉強法（iPhone 専用）</p>
         <p><strong>開発者:</strong> アルバトロス</p>
-        <!-- TODO(公開時): 公開する日に最終更新日を差し替える。下は本日 2026-09-28 の仮置き -->
-        <p><strong>最終更新日:</strong> 2026年9月28日（Swift版への更新・使用状況の計測導入・個情法32条の公表事項の追加に伴い更新）</p>
+        <p><strong>最終更新日:</strong> {{公開日}}（Swift版への更新・使用状況の計測導入・個情法32条の公表事項の追加に伴い更新）</p>
       </div>
 
       <p>日本語版と英語版で内容が異なる場合は、日本語版が優先します。</p>
@@ -223,7 +222,7 @@
 
       <h2>13. 個人情報保護法に基づく公表事項</h2>
       <p>当開発者が保有する個人情報は、お問い合わせのメール（メールアドレス、お名前、内容）だけです。これについて、個人情報の保護に関する法律に基づき、次のとおりお知らせします。</p>
-      <p>(1) 事業者: アルバトロス（個人事業主）。氏名（本名）と住所は、ご請求があれば遅滞なくお知らせします。</p>
+      <p>(1) 事業者: アルバトロス（個人事業主 {{氏名: 希海さんの確認待ち}}）。住所は、ご請求があれば遅滞なくお知らせします。</p>
       <p>(2) 利用目的: お問い合わせへの返信のため（10章）。</p>
       <p>(3) 開示などのご請求: ご本人から、利用目的の通知、開示（第三者提供の記録の開示を含みます）、訂正・追加・削除、利用の停止・消去、第三者への提供の停止のご請求があった場合は、法律に従って対応します。ご請求の内容を書いて、お問い合わせのときと同じメールアドレスから、12章のメールアドレスにお送りください。ご本人の確認は、そのメールアドレスからのご連絡であることで行い、必要な場合は追加で確認をお願いすることがあります。手数料はいただきません。回答はメールでお送りします。</p>
       <p>(4) 安全管理のために講じた措置:</p>
@@ -231,18 +230,14 @@
         <li>基本方針: 法令とガイドラインを守り、お問い合わせと苦情の窓口を12章に置いています。</li>
         <li>取り扱う者: 当開発者（代表者）1人だけが取り扱います。</li>
         <li>技術面: 取り扱うパソコンには、画面ロック（スリープ・画面保護が始まるとすぐにロック）を設定しています。</li>
-        <!-- TODO(希海さん確認): 次の3つを確かめたら、上の行に追加する（それまでは書かない）
-             1. Gmail の2段階認証: Google アカウント → セキュリティ →「2段階認証プロセス」がオン
-             2. iPhone の画面ロック: 設定 → Face ID とパスコード → パスコードがオン（メールを iPhone で見る場合だけ）
-             3. OS を最新に保つ: Mac を 25G313 に更新し、自動更新をオンにする。iPhone も同じ。両方そろってから
-        -->
         <li>保存期間: 対応が終わってから1年以内に削除します（10章）。</li>
         <li>外国での取り扱い: お問い合わせのメールは、Google LLC（米国）の Gmail で受信・保存しています。Google はデータを複数の国のデータセンターに分けて保存しているため、保存先のサーバの国を特定できません（参考: <a href="https://www.google.com/about/datacenters/locations/" target="_blank" rel="noopener">Google のデータセンターの所在地</a>）。米国の個人情報の保護に関する制度は、個人情報保護委員会の「<a href="https://www.ppc.go.jp/personalinfo/legal/kaiseihogohou/" target="_blank" rel="noopener">外国における個人情報の保護に関する制度等の調査</a>」で確認したうえで、上記の措置を講じています。提供先である Google LLC は、同社の<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">プライバシーポリシー</a>に基づき、通信の暗号化やアクセス制御などの個人情報の保護のための措置を講じています。</li>
       </ul>
+      <p>講じた措置の詳しい内容は、ご請求があれば遅滞なくお知らせします。</p>
       <p>お問い合わせのメールは、米国の Google LLC が提供する Gmail で受信・保管します。外国にある第三者への個人データの提供を認めることに同意のうえ、お問い合わせください。提供先の国（米国）の個人情報の保護に関する制度、提供先である Google LLC が講ずる措置、および当開発者の講じる措置は、上記(4)のとおりです。</p>
       <p>(5) 苦情の申出先: 12章のメールアドレス。</p>
 
-      <div class="lang-section">
+      <div class="lang-section" lang="en">
         <h2>English Version</h2>
 
         <p>Albatross ("we", "us" or "the developer") deeply respects the privacy of users of "Focus Timer: Pomodoro Study Method" ("the App"). This Privacy Policy explains how information is handled in the App. The App is an iPhone-only app.</p>
@@ -310,7 +305,7 @@
           <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from sites or apps that use its services</a>
         </p>
 
-        <h4 style="margin-top:20px;margin-bottom:10px;font-size:15px;">6-2. Usage Measurement (TelemetryDeck)</h4>
+        <h3>6-2. Usage Measurement (TelemetryDeck)</h3>
         <p>To improve the App, we use "TelemetryDeck", an analytics service provided by TelemetryDeck GmbH (Germany), to send the following information.</p>
         <p><strong>Information we send</strong></p>
         <ul>
@@ -361,7 +356,7 @@
 
         <h3>13. Disclosures under Japan's Act on the Protection of Personal Information</h3>
         <p>The only personal information we hold is the email you send us (your email address, name and message). Under Japan's Act on the Protection of Personal Information, we disclose the following.</p>
-        <p>(1) Business operator: Albatross (a sole proprietorship). We will provide the name and address of the owner without delay upon request.</p>
+        <p>(1) Business operator: Albatross (a sole proprietorship owned by {{Name: pending confirmation}}). We will provide the address without delay upon request.</p>
         <p>(2) Purpose of use: To reply to your inquiry (Section 10).</p>
         <p>(3) Requests for disclosure, etc.: We will respond, as required by law, to your request to be notified of the purpose of use, or for disclosure (including records of provision to third parties), correction, addition or deletion, suspension of use or erasure, or suspension of provision to third parties. Please email the address in Section 12 from the same email address you used for your inquiry, describing your request. We verify your identity by the fact that the request comes from that address, and may ask for additional confirmation if needed. There is no fee. We will reply by email.</p>
         <p>(4) Security measures:</p>
@@ -369,14 +364,10 @@
           <li>Basic policy: We comply with applicable laws and guidelines, and provide a contact point for inquiries and complaints (Section 12).</li>
           <li>Who handles the data: Only the owner of Albatross handles it.</li>
           <li>Technical measures: The computer used to handle the data has a screen lock that activates immediately when it sleeps or the screen saver starts.</li>
-          <!-- TODO(confirm before adding): Add the following to the line above once confirmed (do not add until then)
-               1. Two-step verification is on for the Gmail account
-               2. Screen lock (passcode) is on for the iPhone (only if email is also checked on iPhone)
-               3. OS kept up to date on both the Mac and the iPhone
-          -->
           <li>Retention: Deleted within one year after the inquiry is resolved (Section 10).</li>
           <li>Handling outside Japan: Emails are received and stored in Gmail, provided by Google LLC (United States). Because Google stores data across data centers in multiple countries, we cannot identify the country where the server is located (see <a href="https://www.google.com/about/datacenters/locations/" target="_blank" rel="noopener">Google's data center locations</a>). We take the measures above after reviewing the U.S. personal information protection system using the <a href="https://www.ppc.go.jp/personalinfo/legal/kaiseihogohou/" target="_blank" rel="noopener">survey published by Japan's Personal Information Protection Commission</a>. Google LLC, the recipient, takes measures to protect personal information, such as encryption in transit and access controls, under its <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a>.</li>
         </ul>
+        <p>Further details of these measures are available without delay upon request.</p>
         <p>Emails you send us are received and stored in Gmail, provided by Google LLC in the United States. Please contact us only if you agree to the provision of your personal data to a third party located in a foreign country. The personal information protection system of the destination country (the United States), the measures taken by Google LLC (the recipient), and the measures we take are as described in (4) above.</p>
         <p>(5) Complaints: Please contact the email address in Section 12.</p>
       </div>

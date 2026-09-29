@@ -34,7 +34,7 @@
       max-width: 720px;
       margin: 16px auto 0;
       padding: 0 20px;
-      font-size: 13px;
+      font-size: 14px;
       color: var(--text-muted);
     }
     .breadcrumb a { color: var(--text-muted); }
@@ -66,7 +66,7 @@
       border-radius: 8px;
       padding: 12px 16px;
       margin-bottom: 24px;
-      font-size: 13px;
+      font-size: 14px;
       color: var(--text-muted);
     }
     .meta strong { color: var(--text); }
@@ -90,19 +90,25 @@
       font-weight: 600;
       white-space: nowrap;
     }
+    /* 狭い画面（iPhone など）では、見出しと中身を縦に並べて右の欄が狭くならないようにする */
+    @media (max-width: 480px) {
+      th, td { display: block; width: 100%; }
+      th { white-space: normal; border-bottom: none; padding-bottom: 2px; }
+      td { padding-top: 2px; }
+    }
     .placeholder {
       color: var(--primary);
       background: #FFF0F0;
       border-radius: 4px;
       padding: 1px 6px;
       font-family: "SF Mono", Menlo, monospace;
-      font-size: 13px;
+      font-size: 14px;
     }
     footer {
       text-align: center;
       padding: 24px;
       color: var(--text-muted);
-      font-size: 13px;
+      font-size: 14px;
       border-top: 1px solid var(--border);
     }
     footer a { color: var(--text-muted); margin: 0 8px; }
@@ -122,8 +128,7 @@
       <div class="meta">
         <p><strong>アプリ名:</strong> 集中タイマー：ポモドーロ勉強法（iPhone 専用）</p>
         <p><strong>開発者:</strong> アルバトロス</p>
-        <!-- TODO(公開時): 公開する日に最終更新日を差し替える -->
-        <p><strong>最終更新日:</strong> 2026年9月29日</p>
+        <p><strong>最終更新日:</strong> {{公開日}}</p>
       </div>
 
       <p>特定商取引法（通信販売）に基づき、以下のとおり表示します。</p>
@@ -141,7 +146,7 @@
           </tr>
           <tr>
             <th>所在地・電話番号</th>
-            <td>ご請求があれば遅滞なく開示します（下のメールへ）</td>
+            <td>ご請求があれば、電子メールで遅滞なくお知らせします（費用はかかりません）。下のメールアドレスにご請求ください。</td>
           </tr>
           <tr>
             <th>メールアドレス</th>
@@ -150,8 +155,8 @@
           <tr>
             <th>販売価格（税込）</th>
             <td>
-              Plus 月額 ¥200／年額 ¥1,200（初回7日間無料）／買い切り ¥2,400。<br>
-              初年度半額のセールは、期間と価格を購入画面に表示します。日本のみの提供です。
+              Plus 月額 ¥200／年額 ¥1,200（初回7日間無料）／買い切り ¥2,400（1回のお支払い。自動更新はありません）。<br>
+              日本のみの提供です。
             </td>
           </tr>
           <tr>
@@ -160,7 +165,7 @@
           </tr>
           <tr>
             <th>支払方法・時期</th>
-            <td>App Store の決済によります。支払いの時期は Apple の定めによります。</td>
+            <td>App Store の決済（Apple アカウントに登録したお支払い方法）。買い切りは購入の確定時にお支払い。月額・年額は購入の確定時と、その後の各更新日に自動で請求されます。年額の7日間無料のお試しは、お試しが終わったときに最初の請求があります。</td>
           </tr>
           <tr>
             <th>提供の時期</th>
@@ -168,7 +173,7 @@
           </tr>
           <tr>
             <th>自動更新と解約</th>
-            <td>月額・年額プランは自動更新です。解約する場合は、次の更新日の24時間前までに、iPhone の「設定」→ Apple ID → サブスクリプションから手続きしてください。</td>
+            <td>月額プランは1か月ごとに ¥200、年額プランは1年ごとに ¥1,200 で、解約するまで自動で更新されます。解約しても、その期間の終わりまでは Plus を使えます。期間の途中で解約しても、残りの期間分の返金はありません。年額の7日間無料のお試しは、お試しが終わる24時間前までに解約しないと、年額プラン（¥1,200）に自動で移ります。解約する場合は、次の更新日の24時間前までに、iPhone の「設定」→ 自分の名前 →「サブスクリプション」から手続きしてください。</td>
           </tr>
           <tr>
             <th>返品・キャンセル</th>
@@ -176,7 +181,7 @@
           </tr>
           <tr>
             <th>動作環境</th>
-            <td>iOS 18.0 以降の iPhone</td>
+            <td>iOS 18.0 以降の iPhone。Apple Watch の機能を使う場合は、その iPhone とペアリングした、watchOS 11.0 以降の Apple Watch</td>
           </tr>
         </tbody>
       </table>

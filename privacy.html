@@ -181,6 +181,7 @@
         <li>出来事に付ける値（集中の分数、集中中のロックを使ったかどうか、iPhone と Apple Watch のどちらで終えたか、案内を見た場面、購入した商品の種類）</li>
         <li>端末と環境の情報（機種名、OS とそのバージョン、アプリのバージョン、言語・地域・時間帯の設定、画面の大きさと向き、CPU の種類、表示の設定（ダークモード・文字の大きさなどのアクセシビリティの設定）、配布の種類（App Store・TestFlight など）、送信した日時、最初に使った日、アプリを使った日数・回数・時間の長さ（1回あたりの平均と前回の長さ）、TelemetryDeck の SDK のバージョン）</li>
         <li>端末ごとの識別子を、端末の中で変換した値（元の識別子に戻せない形に変換してから送ります）</li>
+        <li>ひとまとまりの使用（セッション）ごとにランダムに作る識別子（アプリを起動したときと、5分以上ほかのアプリなどに切り替えていたあとに戻ったときに、新しく作り直します）</li>
       </ul>
       <p><strong>送信しない情報</strong></p>
       <ul>
@@ -319,6 +320,7 @@
           <li>Values attached to events (focus duration in minutes, whether Focus Lock was used during focus, whether the session ended on iPhone or Apple Watch, where an offer was shown, the type of product purchased)</li>
           <li>Device and environment information (model name, OS and its version, app version, language/region/time zone settings, screen size and orientation, CPU type, display settings (dark mode, text size and other accessibility settings), distribution type (App Store, TestFlight, etc.), date and time of transmission, date of first use, number of days and times the app has been used and how long it was used (average and previous session length), TelemetryDeck SDK version)</li>
           <li>A per-device identifier transformed on the device (converted into a form that cannot be reversed to the original identifier before being sent)</li>
+          <li>A random identifier created for each usage session (a new one is created when you launch the App and when you return to it after being away for 5 minutes or more)</li>
         </ul>
         <p><strong>Information we do not send</strong></p>
         <ul>

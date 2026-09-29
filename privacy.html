@@ -130,7 +130,8 @@
         <li>選択した環境音の設定</li>
         <li>集中の記録（実施日付・完了セット数・集中時間・タグ）</li>
         <li>連続達成日数（ストリーク）</li>
-        <li>集中ロックの設定（対象に選んだアプリ・サイトを含む。詳細は「5. 集中ロック（スクリーンタイム連携）について」）</li>
+        <li>今日と週の目標（Plus）</li>
+        <li>集中ロックの設定（iPhone のみ。対象に選んだアプリ・サイトを含む。詳細は「5. 集中ロック（スクリーンタイム連携）について」）</li>
         <li>チュートリアル表示済みフラグ</li>
         <li>表示に関する設定（ダークモードなど）</li>
       </ul>
@@ -148,7 +149,7 @@
 
       <h2>5. 集中ロック（スクリーンタイム連携）について</h2>
       <p>本アプリの「集中ロック」は、集中している間、ユーザーが選んだアプリやウェブサイトを一時的に開けないようにする機能です。この機能は、Apple が提供するスクリーンタイム（Family Controls / Screen Time API）の仕組みを使って動きます。</p>
-      <p>ユーザーが集中ロックの対象として選んだアプリやウェブサイトの情報を、<strong>本アプリが当開発者や第三者に送ることはありません</strong>。広告の仕組み（Google の SDK）にも渡さず、広告・広告の効果の測定・分析・利用者の分析（プロファイリング）には使いません。ただし、集中中にロックを使ったかどうか（使った・使わなかった）だけは、6-2 の使用状況の計測で送ります（選んだアプリやウェブサイトは送りません）。集中ロックの設定は端末内（およびペアリングした Apple Watch）に保存されます。iPhone 本体のバックアップをお使いの場合は、ほかのアプリのデータと同じく、Apple の仕組みでバックアップに含まれることがあります。</p>
+      <p>ユーザーが集中ロックの対象として選んだアプリやウェブサイトの情報を、<strong>本アプリが当開発者や第三者に送ることはありません</strong>。広告の仕組み（Google の SDK）にも渡さず、広告・広告の効果の測定・分析・利用者の分析（プロファイリング）には使いません。ただし、集中中にロックを使ったかどうか（使った・使わなかった）だけは、6-2 の使用状況の計測で送ります（選んだアプリやウェブサイトは送りません）。集中ロックの設定は、この iPhone の中だけに保存されます（Apple Watch には送りません）。iPhone 本体のバックアップをお使いの場合は、ほかのアプリのデータと同じく、Apple の仕組みでバックアップに含まれることがあります。</p>
 
       <h2>6. 第三者への情報提供（広告配信について）</h2>
       <p>本アプリは収益化のため、Googleが提供する広告配信サービス <strong>Google AdMob</strong> を使用しています。AdMobを通じて以下の情報がGoogleおよび広告配信パートナーに送信される可能性があります：</p>
@@ -176,9 +177,9 @@
       <p>本アプリは、アプリの改善のため、TelemetryDeck GmbH（ドイツ）が提供する分析サービス「TelemetryDeck」を使って、次の情報を送信します。</p>
       <p><strong>送信する情報</strong></p>
       <ul>
-        <li>アプリの中の出来事（アプリを開いた、集中を終えた・途中でやめた、休憩を飛ばした、Plus の案内を見た・購入ボタンを押した・購入した、お試しを始めた、セールの案内を見た・購入した）</li>
+        <li>アプリの中の出来事（初めて起動した（インストール。端末の中の使い方の累計が空のときに送るため、送信をオンに戻したあとなどにも、もう一度送ることがあります）、アプリを開いた、集中を終えた・途中でやめた、休憩を飛ばした、Plus の案内を見た・購入ボタンを押した・購入した、お試しを始めた、セールの案内を見た・購入した）</li>
         <li>出来事に付ける値（集中の分数、集中中のロックを使ったかどうか、iPhone と Apple Watch のどちらで終えたか、案内を見た場面、購入した商品の種類）</li>
-        <li>端末と環境の情報（機種名、OS とそのバージョン、アプリのバージョン、言語・地域・時間帯の設定、画面の大きさ、表示の設定（ダークモード・文字の大きさなどのアクセシビリティの設定）、送信した日時、アプリを使った日数や回数）</li>
+        <li>端末と環境の情報（機種名、OS とそのバージョン、アプリのバージョン、言語・地域・時間帯の設定、画面の大きさと向き、CPU の種類、表示の設定（ダークモード・文字の大きさなどのアクセシビリティの設定）、配布の種類（App Store・TestFlight など）、送信した日時、最初に使った日、アプリを使った日数・回数・時間の長さ（1回あたりの平均と前回の長さ）、TelemetryDeck の SDK のバージョン）</li>
         <li>端末ごとの識別子を、端末の中で変換した値（元の識別子に戻せない形に変換してから送ります）</li>
       </ul>
       <p><strong>送信しない情報</strong></p>
@@ -194,7 +195,7 @@
       <p><strong>通信:</strong> 暗号化された通信（HTTPS）で送ります</p>
       <p><strong>保存期間:</strong> TelemetryDeck の保存の決まりに従います。TelemetryDeck は、送られた情報を消す時期を決めておらず（7〜10年後に消す見込みとしていますが、保証はしていません）、当開発者がアカウントを閉じても、送られた情報は TelemetryDeck に残ります</p>
       <p><strong>削除について:</strong> 送る情報は、個人を特定できない匿名の値です。そのため、特定の方の情報を選んで消すことはできません</p>
-      <p><strong>送信の停止:</strong> アプリの「設定」＞「このアプリについて」＞「使い方のデータを送る（匿名）」をオフにすると、それ以後は送信しません。あわせて、送信する前に端末の中にたまっていた分と、アプリを使った日数や回数などの累計も消去します。もう一度オンにしたときは、次にアプリを起動したときから送信します（オフにする前とオフの間の分は送信しません）</p>
+      <p><strong>送信の停止:</strong> アプリの「設定」＞「このアプリについて」＞「使い方のデータを送る（匿名）」をオフにすると、それ以後は送信しません。あわせて、送信する前に端末の中にたまっていた分と、アプリを使った日数や回数などの累計も消去します。もう一度オンにしたときは、すぐに送信を始めます。ただし、アプリを起動したあとに、送信している状態からオフにしていた場合は、次にアプリを起動したときから送信します（このときは、設定の画面に「次にアプリを開いたときから送ります」と表示します）。どちらの場合も、オフにする前とオフの間の分は送信しません</p>
       <p>当開発者は、TelemetryDeck GmbH（ドイツ）が、TelemetryDeck のプライバシーポリシーに基づき、本ポリシーと App Store の審査ガイドラインが求めるのと同じか同等の保護をユーザーのデータに与えることを確認したうえで、その仕組みを使っています。</p>
       <p>
         <a href="https://telemetrydeck.com/privacy/" target="_blank" rel="noopener">TelemetryDeck のプライバシーポリシー</a><br>
@@ -225,7 +226,7 @@
       <p>当開発者が保有する個人情報は、お問い合わせのメール（メールアドレス、お名前、内容）だけです。これについて、個人情報の保護に関する法律に基づき、次のとおりお知らせします。</p>
       <p>(1) 事業者: アルバトロス（個人事業主 堀 希海）。住所は、ご請求があれば遅滞なくお知らせします。</p>
       <p>(2) 利用目的: お問い合わせへの返信のため（10章）。</p>
-      <p>(3) 開示などのご請求: ご本人から、利用目的の通知、開示（第三者提供の記録の開示を含みます）、訂正・追加・削除、利用の停止・消去、第三者への提供の停止のご請求があった場合は、法律に従って対応します。ご請求の内容を書いて、お問い合わせのときと同じメールアドレスから、12章のメールアドレスにお送りください。ご本人の確認は、そのメールアドレスからのご連絡であることで行い、必要な場合は追加で確認をお願いすることがあります。手数料はいただきません。回答はメールでお送りします。</p>
+      <p>(3) 開示などのご請求: ご本人から、利用目的の通知、開示（第三者提供の記録の開示を含みます）、訂正・追加・削除、利用の停止・消去、第三者への提供の停止のご請求があった場合は、法律に従って対応します。ご請求の内容を書いて、お問い合わせのときと同じメールアドレスから、12章のメールアドレスにお送りください。ご本人の確認は、そのメールアドレスからのご連絡であることで行い、必要な場合は追加で確認をお願いすることがあります。手数料はいただきません。回答は、ご希望の方法がなければメールでお送りします。</p>
       <p>(4) 安全管理のために講じた措置:</p>
       <ul>
         <li>基本方針: 法令とガイドラインを守り、お問い合わせと苦情の窓口を12章に置いています。</li>
@@ -233,7 +234,7 @@
         <li>技術面: 取り扱うパソコンとスマートフォンには、画面ロックを設定しています（パソコンは、スリープ・画面保護が始まるとすぐにロックします）。</li>
         <li>技術面: お問い合わせを受けるメールのアカウントは、2段階認証で守っています。</li>
         <li>保存期間: 対応が終わってから1年以内に削除します（10章）。</li>
-        <li>外国での取り扱い: お問い合わせのメールは、Google LLC（米国）の Gmail で受信・保存しています。Google はデータを複数の国のデータセンターに分けて保存しているため、保存先のサーバの国を特定できません（参考: <a href="https://www.google.com/about/datacenters/locations/" target="_blank" rel="noopener">Google のデータセンターの所在地</a>）。米国の個人情報の保護に関する制度は、個人情報保護委員会の「<a href="https://www.ppc.go.jp/personalinfo/legal/kaiseihogohou/" target="_blank" rel="noopener">外国における個人情報の保護に関する制度等の調査</a>」で確認したうえで、上記の措置を講じています。提供先である Google LLC は、同社の<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">プライバシーポリシー</a>に基づき、通信の暗号化やアクセス制御などの個人情報の保護のための措置を講じています。</li>
+        <li>外国での取り扱い: お問い合わせのメールは、Google LLC（米国）の Gmail で受信・保存しています。Google はデータを複数の国のデータセンターに分けて保存しているため、保存先のサーバの国を特定できません（参考: <a href="https://www.google.com/about/datacenters/locations/" target="_blank" rel="noopener">Google のデータセンターの所在地</a>）。米国の個人情報の保護に関する制度は、個人情報保護委員会の「<a href="https://www.ppc.go.jp/personalinfo/legal/kaiseihogohou/" target="_blank" rel="noopener">外国における個人情報の保護に関する制度等の調査</a>」（米国の分: <a href="https://www.ppc.go.jp/files/pdf/USA_report.pdf" target="_blank" rel="noopener">米国の報告（PDF）</a>）で確認したうえで、上記の措置を講じています。提供先である Google LLC は、同社の<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">プライバシーポリシー</a>に基づき、通信の暗号化やアクセス制御などの個人情報の保護のための措置を講じています。</li>
       </ul>
       <p>講じた措置の詳しい内容は、ご請求があれば遅滞なくお知らせします。</p>
       <p>お問い合わせのメールは、米国の Google LLC が提供する Gmail で受信・保管します。外国にある第三者への個人データの提供を認めることに同意のうえ、お問い合わせください。提供先の国（米国）の個人情報の保護に関する制度、提供先である Google LLC が講ずる措置、および当開発者の講じる措置は、上記(4)のとおりです。</p>
@@ -241,6 +242,7 @@
 
       <div class="lang-section" lang="en">
         <h2>English Version</h2>
+        <p><strong>Last updated:</strong> {{公開日}}</p>
 
         <p>Albatross ("we", "us" or "the developer") deeply respects the privacy of users of "集中タイマー：ポモドーロ＆アプリロック" (Focus Timer: Pomodoro &amp; App Lock; "the App"). This Privacy Policy explains how information is handled in the App. The App is an iPhone-only app.</p>
 
@@ -266,7 +268,8 @@
           <li>Selected ambient sound settings</li>
           <li>Focus records (date, number of completed sets, focus time, tags)</li>
           <li>Streak (consecutive days achieved)</li>
-          <li>Focus Lock settings (including the apps and sites you choose to block; see "5. About Focus Lock (Screen Time Integration)")</li>
+          <li>Daily and weekly goals (Plus)</li>
+          <li>Focus Lock settings (iPhone only; including the apps and sites you choose to block; see "5. About Focus Lock (Screen Time Integration)")</li>
           <li>A flag indicating the tutorial has been shown</li>
           <li>Display settings (such as dark mode)</li>
         </ul>
@@ -284,7 +287,7 @@
 
         <h3>5. About Focus Lock (Screen Time Integration)</h3>
         <p>The App's "Focus Lock" temporarily prevents you from opening apps or websites you have selected while you are focusing. This feature works using Apple's Screen Time (Family Controls / Screen Time API).</p>
-        <p><strong>The App never sends information about the apps and websites you select for Focus Lock to us or to any third party.</strong> It is never passed to the ad SDK (Google), and is not used for advertising, ad measurement, analytics or profiling. However, whether Focus Lock was used during a focus session (used or not used) is sent as part of the usage measurement in Section 6-2 (the apps and websites you select are not sent). Focus Lock settings are stored on your device (and on a paired Apple Watch). If you back up your iPhone, Apple may include them in the backup like other app data.</p>
+        <p><strong>The App never sends information about the apps and websites you select for Focus Lock to us or to any third party.</strong> It is never passed to the ad SDK (Google), and is not used for advertising, ad measurement, analytics or profiling. However, whether Focus Lock was used during a focus session (used or not used) is sent as part of the usage measurement in Section 6-2 (the apps and websites you select are not sent). Focus Lock settings are stored only on your iPhone (they are not sent to Apple Watch). If you back up your iPhone, Apple may include them in the backup like other app data.</p>
 
         <h3>6. Provision of Information to Third Parties (Advertising)</h3>
         <p>For monetization, the App uses <strong>Google AdMob</strong>, an advertising service provided by Google. Through AdMob, the following information may be sent to Google and its advertising partners:</p>
@@ -312,9 +315,9 @@
         <p>To improve the App, we use "TelemetryDeck", an analytics service provided by TelemetryDeck GmbH (Germany), to send the following information.</p>
         <p><strong>Information we send</strong></p>
         <ul>
-          <li>In-app events (opened the app; finished or stopped a focus session; skipped a break; viewed the Plus offer, tapped the purchase button, or made a purchase; started a trial; viewed or purchased from a sale offer)</li>
+          <li>In-app events (first launch after install (sent when the usage totals on the device are empty, so it may be sent again, for example after you turn sending back on); opened the app; finished or stopped a focus session; skipped a break; viewed the Plus offer, tapped the purchase button, or made a purchase; started a trial; viewed or purchased from a sale offer)</li>
           <li>Values attached to events (focus duration in minutes, whether Focus Lock was used during focus, whether the session ended on iPhone or Apple Watch, where an offer was shown, the type of product purchased)</li>
-          <li>Device and environment information (model name, OS and its version, app version, language/region/time zone settings, screen size, display settings (dark mode, text size and other accessibility settings), date and time of transmission, number of days and times the app has been used)</li>
+          <li>Device and environment information (model name, OS and its version, app version, language/region/time zone settings, screen size and orientation, CPU type, display settings (dark mode, text size and other accessibility settings), distribution type (App Store, TestFlight, etc.), date and time of transmission, date of first use, number of days and times the app has been used and how long it was used (average and previous session length), TelemetryDeck SDK version)</li>
           <li>A per-device identifier transformed on the device (converted into a form that cannot be reversed to the original identifier before being sent)</li>
         </ul>
         <p><strong>Information we do not send</strong></p>
@@ -330,7 +333,7 @@
         <p><strong>Transmission:</strong> Sent over an encrypted connection (HTTPS)</p>
         <p><strong>Retention:</strong> Follows TelemetryDeck's retention rules. TelemetryDeck has no schedule for deleting the information sent to it (it expects to delete such events after 7-10 years but does not guarantee this), and even if we close our account, the information sent remains with TelemetryDeck</p>
         <p><strong>Deletion:</strong> The information sent is anonymous and cannot identify an individual. For this reason, we cannot select and delete a particular person's information</p>
-        <p><strong>Stopping transmission:</strong> If you turn off "Send usage data (anonymous)" under the App's "Settings" &gt; "About this app", nothing is sent thereafter. At the same time, any data accumulated on the device before sending, and cumulative counts such as the number of days and times the app has been used, are erased. If you turn it back on, transmission resumes from the next time you launch the App (data from before turning it off and during the off period is not sent)</p>
+        <p><strong>Stopping transmission:</strong> If you turn off "Send usage data (anonymous)" under the App's "Settings" &gt; "About this app", nothing is sent thereafter. At the same time, any data accumulated on the device before sending, and cumulative counts such as the number of days and times the app has been used, are erased. If you turn it back on, transmission starts right away. However, if you turned it off while it was sending since the App was last launched, transmission resumes from the next time you launch the App (in that case, the settings screen shows a note saying so). In either case, data from before turning it off and during the off period is not sent</p>
         <p>We use TelemetryDeck GmbH (Germany) only after confirming that, under TelemetryDeck's Privacy Policy, it provides the same or equal protection of user data as stated in this policy and as required by the App Store Review Guidelines.</p>
         <p>
           <a href="https://telemetrydeck.com/privacy/" target="_blank" rel="noopener">TelemetryDeck Privacy Policy</a><br>
@@ -361,7 +364,7 @@
         <p>The only personal information we hold is the email you send us (your email address, name and message). Under Japan's Act on the Protection of Personal Information, we disclose the following.</p>
         <p>(1) Business operator: Albatross (a sole proprietorship owned by Nozomi Hori). We will provide the address without delay upon request.</p>
         <p>(2) Purpose of use: To reply to your inquiry (Section 10).</p>
-        <p>(3) Requests for disclosure, etc.: We will respond, as required by law, to your request to be notified of the purpose of use, or for disclosure (including records of provision to third parties), correction, addition or deletion, suspension of use or erasure, or suspension of provision to third parties. Please email the address in Section 12 from the same email address you used for your inquiry, describing your request. We verify your identity by the fact that the request comes from that address, and may ask for additional confirmation if needed. There is no fee. We will reply by email.</p>
+        <p>(3) Requests for disclosure, etc.: We will respond, as required by law, to your request to be notified of the purpose of use, or for disclosure (including records of provision to third parties), correction, addition or deletion, suspension of use or erasure, or suspension of provision to third parties. Please email the address in Section 12 from the same email address you used for your inquiry, describing your request. We verify your identity by the fact that the request comes from that address, and may ask for additional confirmation if needed. There is no fee. We will reply by email unless you request another method.</p>
         <p>(4) Security measures:</p>
         <ul>
           <li>Basic policy: We comply with applicable laws and guidelines, and provide a contact point for inquiries and complaints (Section 12).</li>
@@ -369,7 +372,7 @@
           <li>Technical measures: The computer and smartphone used to handle the data are protected by a screen lock (the computer locks immediately when it sleeps or the screen saver starts).</li>
           <li>Technical measures: The email account used to receive inquiries is protected by two-step verification.</li>
           <li>Retention: Deleted within one year after the inquiry is resolved (Section 10).</li>
-          <li>Handling outside Japan: Emails are received and stored in Gmail, provided by Google LLC (United States). Because Google stores data across data centers in multiple countries, we cannot identify the country where the server is located (see <a href="https://www.google.com/about/datacenters/locations/" target="_blank" rel="noopener">Google's data center locations</a>). We take the measures above after reviewing the U.S. personal information protection system using the <a href="https://www.ppc.go.jp/personalinfo/legal/kaiseihogohou/" target="_blank" rel="noopener">survey published by Japan's Personal Information Protection Commission</a>. Google LLC, the recipient, takes measures to protect personal information, such as encryption in transit and access controls, under its <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a>.</li>
+          <li>Handling outside Japan: Emails are received and stored in Gmail, provided by Google LLC (United States). Because Google stores data across data centers in multiple countries, we cannot identify the country where the server is located (see <a href="https://www.google.com/about/datacenters/locations/" target="_blank" rel="noopener">Google's data center locations</a>). We take the measures above after reviewing the U.S. personal information protection system using the <a href="https://www.ppc.go.jp/personalinfo/legal/kaiseihogohou/" target="_blank" rel="noopener">survey published by Japan's Personal Information Protection Commission</a> (for the United States: <a href="https://www.ppc.go.jp/files/pdf/USA_report.pdf" target="_blank" rel="noopener">U.S. report (PDF)</a>). Google LLC, the recipient, takes measures to protect personal information, such as encryption in transit and access controls, under its <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a>.</li>
         </ul>
         <p>Further details of these measures are available without delay upon request.</p>
         <p>Emails you send us are received and stored in Gmail, provided by Google LLC in the United States. Please contact us only if you agree to the provision of your personal data to a third party located in a foreign country. The personal information protection system of the destination country (the United States), the measures taken by Google LLC (the recipient), and the measures we take are as described in (4) above.</p>
